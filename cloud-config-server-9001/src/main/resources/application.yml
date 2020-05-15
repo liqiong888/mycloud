@@ -7,4 +7,12 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/liqiong888/mycloud/blob/master/cloud-config-server-9001/src/main/resources/config/config.yml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  #将自己注册进eureka
+  register-with-eureka: true
+  #  抓取注册中心
+  fetch-registry: true
