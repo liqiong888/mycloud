@@ -2,16 +2,14 @@ server:
   port: 8006
 spring:
   application:
-    name: provider-server-consul
-management:
-  server:
-    port: 4452
-  cloud:
-    consul:
-      host: localhost
-      port: 8500
-      discovery:
-#        instance-id: provider-consul-service-id
-        service-name: ${spring.application.name}
-#        health-check-path: ${management.server.servlet.context-path}/health
-#        health-check-interval: 15s
+    name: provider-server-eureka
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka,http://localhost:7002/eureka,
+  #将自己注册进eureka
+  register-with-eureka: true
+  #  抓取注册中心
+  fetch-registry: true
+
