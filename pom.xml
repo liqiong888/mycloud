@@ -16,7 +16,7 @@
         <module>consumer-server-80</module>
         <module>commons-server</module>
         <module>generatorSqlMapEntities</module>
-        <module>cloud-config</module>
+        <module>cloud-config-server-3344</module>
     </modules>
 
 
