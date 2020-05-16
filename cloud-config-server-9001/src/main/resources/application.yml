@@ -1,5 +1,5 @@
 server:
-  port: 9001
+  port: 3344
 spring:
   application:
     name: cloud-config-server-9001
@@ -7,7 +7,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/liqiong888/mycloud/blob/master/cloud-config-server-9001/src/main/resources/config/config.yml
+          uri: https://github.com/liqiong888/mycloud/blob/master/cloud-config/config.yml
+          default-label: master
+          search-paths:
+          - mycloud/blob/master/cloud-config
 eureka:
   client:
     service-url:
