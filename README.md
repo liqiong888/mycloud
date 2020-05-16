@@ -9,6 +9,8 @@
     |  Finchley    |     2.0.x     |
     |  Edgware     |     1.5.x     |
     |  Dalston     |     1.5.x     |
+###
+    本次使用版本： spring cloud Hoxton.SR1  spring boot  2.2.2.RELEASE
 ### pom
      <!--标准化依赖，并不是依赖，子类需依赖自己所需要的，可不用指定版本号，若有特殊要求，子类可指定自己的版本号-->
         <dependencyManagement>
@@ -62,7 +64,9 @@
             </dependencies>
         </dependencyManagement>
 ###创建子项目 
+
     创建maven项目,添加spring cloud ，spring boot 依赖
+    
 ####pom(基础依赖)
     <dependencies>
             <dependency>
