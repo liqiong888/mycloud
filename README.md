@@ -63,50 +63,50 @@
                 </dependency>
             </dependencies>
         </dependencyManagement>
-###创建子项目 
+### 创建子项目 
 
     创建maven项目,添加spring cloud ，spring boot 依赖
     
-####pom(基础依赖)
-    <dependencies>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-actuator</artifactId>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-test</artifactId>
-                <scope>test</scope>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.junit.vintage</groupId>
-                        <artifactId>junit-vintage-engine</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <!--lombok-->
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-            </dependency>
-            <!--热加载-->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-devtools</artifactId>
-                <scope>runtime</scope>
-                <optional>true</optional>
-            </dependency>
-            <!--初始类-->
-            <dependency>
-                <groupId>org.my.com</groupId>
-                <artifactId>commons-server</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-        </dependencies>
+#### pom(基础依赖)
+        <dependencies>
+                <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-web</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-actuator</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-test</artifactId>
+                    <scope>test</scope>
+                    <exclusions>
+                        <exclusion>
+                            <groupId>org.junit.vintage</groupId>
+                            <artifactId>junit-vintage-engine</artifactId>
+                        </exclusion>
+                    </exclusions>
+                </dependency>
+                <!--lombok-->
+                <dependency>
+                    <groupId>org.projectlombok</groupId>
+                    <artifactId>lombok</artifactId>
+                </dependency>
+                <!--热加载-->
+                <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-devtools</artifactId>
+                    <scope>runtime</scope>
+                    <optional>true</optional>
+                </dependency>
+                <!--初始类-->
+                <dependency>
+                    <groupId>org.my.com</groupId>
+                    <artifactId>commons-server</artifactId>
+                    <version>${project.version}</version>
+                </dependency>
+            </dependencies>
 #### spring cloud eureka server
         <dependency>
             <groupId>org.springframework.cloud</groupId>
