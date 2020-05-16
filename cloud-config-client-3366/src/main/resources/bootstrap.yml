@@ -1,16 +1,14 @@
 server:
-  port: 3344
+  port: 3366
 spring:
   application:
-    name: cloud-config-server-3344
+    name: cloud-config-client
   cloud:
     config:
-      server:
-        git:
-          uri: https://github.com/liqiong888/cloudConfig.git
-          search-paths:
-            - cloudConfig
-          label: master
+      lable: master #分支名称
+      name: config #配置文件名
+      profile: master #文件后缀
+      uri: http://localhost:3344 #配置中心地址
   rabbitmq:
     host: 39.105.136.137
     port: 5672
@@ -29,4 +27,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: 'bus-refresh'
+        include: '*'
