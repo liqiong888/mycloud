@@ -29,7 +29,7 @@
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-bus-amqp</artifactId>
     </dependency>
-###application.yml
+### application.yml
     spring:
       rabbitmq:
         host: 39.105.136.137

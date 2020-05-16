@@ -5,7 +5,7 @@
             <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
         </dependency>
 ## yml
-###消息接收者(input)
+### 消息接收者(input)
     server:
       port: 8002
     spring:
