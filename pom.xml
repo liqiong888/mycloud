@@ -23,6 +23,9 @@
         <module>cloud-consumer-input-server-8002</module>
         <module>cloud-provider-output-server-8001</module>
         <module>cloud-consumer-input-server-8003</module>
+        <module>evenbus-consumer-9001</module>
+        <module>evenbus-provider-9002</module>
+        <module>office-test-projects</module>
     </modules>
 
 

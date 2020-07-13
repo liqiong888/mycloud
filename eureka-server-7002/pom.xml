@@ -62,6 +62,13 @@
             </plugin>
         </plugins>
     </build>
-
+    <distributionManagement>
+        <repository>
+            <!--必须与 settings.xml 的 id 一致-->
+            <id>codingcorp-testDemo-maven</id>
+            <name>maven</name>
+            <url>http://codingcorp-maven.pkg.coding.com/repository/testDemo/maven/</url>
+        </repository>
+    </distributionManagement>
 
 </project>

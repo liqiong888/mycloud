@@ -17,4 +17,10 @@ public class SendMessageController {
     public String sendMessage() {
         return providerServiceImpl.send();
     }
+
+
+    @GetMapping("/sendMessage2")
+    public void sendMessage2() {
+        providerServiceImpl.send2();
+    }
 }

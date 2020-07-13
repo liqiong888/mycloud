@@ -1,6 +1,7 @@
 package org.my.com.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.my.com.entities.Users;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
@@ -19,7 +20,13 @@ public class ReceiveMessageListenerController {
     @StreamListener(Sink.INPUT)
     public void input(Message<String> message) {
 
-         log.info("{}",message.getPayload()+"----"+serverPort);
+         log.info(" input    {}",message.getPayload()+"----"+serverPort);
+    }
+
+    @StreamListener(Sink.INPUT)
+    public void input2(Message<Users> message) {
+
+        log.info(" input2  {}",message.getPayload()+"----"+serverPort);
     }
 
 

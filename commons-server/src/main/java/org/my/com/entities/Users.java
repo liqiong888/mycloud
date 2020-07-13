@@ -1,6 +1,7 @@
 package org.my.com.entities;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.my.com.base.bean.BaseBean;
@@ -11,6 +12,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class Users extends BaseBean {
 
     private Date createdAt;
