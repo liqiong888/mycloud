@@ -11,12 +11,12 @@
 
     <artifactId>generatorSqlMapEntities</artifactId>
     <dependencies>
-       <!-- <dependency>
+       <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.16</version>
         </dependency>
-        &lt;!&ndash; https://mvnrepository.com/artifact/org.mybatis.generator/mybatis-generator-core &ndash;&gt;
+<!--       https://mvnrepository.com/artifact/org.mybatis.generator/mybatis-generator-core-->
         <dependency>
             <groupId>org.mybatis.generator</groupId>
             <artifactId>mybatis-generator-core</artifactId>
@@ -31,7 +31,7 @@
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
             <version>3.2.3</version>
-        </dependency>-->
+        </dependency>
         <!--不可用 无法引入依赖-->
 <!--        <dependency>-->
 <!--            <groupId>com.oracle</groupId>-->
